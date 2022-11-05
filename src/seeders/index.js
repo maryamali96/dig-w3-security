@@ -7,7 +7,7 @@ const DATABASE = process.env.DATABASE;
 const MONGODB_CLOUD_CON = process.env.MONGODB_CLOUD_CON;
 const seed = require('./rolesSeeder')
 
-    console.log(MONGODB_CLOUD_CON)
+    console.log("connect"+MONGODB_CLOUD_CON)
     mongoose.connect(MONGODB_CLOUD_CON);
 
 const db = mongoose.connection;
