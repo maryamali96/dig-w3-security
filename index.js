@@ -23,7 +23,7 @@ if(process.env.ENVIRONMENT == 'development')
 }
 else{
     mongoose.connect(MONGODB_CLOUD_CON);
-    console.log("connect db"+" "+MONGODB_CLOUD_CON)
+    console.log("connect db="+" "+MONGODB_CLOUD_CON)
 }
 
 const db = mongoose.connection;
